@@ -67,7 +67,7 @@ async function getAccessToken() {
     client_id: INTER_CLIENT_ID.trim(),
     client_secret: INTER_CLIENT_SECRET.trim(),
     grant_type: "client_credentials",
-    scope: "pix.read pix.write cob.read cob.write",
+    scope: "pix.read pix.write cob.read cob.write webhook.read webhook.write",
   }).toString();
 
   const response = await makeHttpsRequest(
